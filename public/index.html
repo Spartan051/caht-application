@@ -4,9 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chat application</title>
+    <title>Join | chatapp</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <p>welcome</p>
+    <div class="form-cover">
+      <div class="form-title">Join Chat</div>
+      <form action="./chat.html">
+        <div>
+          <label for="name">Display name</label>
+          <input type="text" name="name" autofocus />
+        </div>
+        <div>
+          <label for="room">Room name</label> <input type="text" name="room" />
+        </div>
+        <input class="submit-btn" type="submit" value="Join" />
+      </form>
+    </div>
   </body>
 </html>

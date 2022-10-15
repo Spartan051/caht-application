@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(45deg, rgb(224, 224, 50), rgb(21, 153, 49));
+}
+
+.users {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(224, 224, 50),
+    rgb(21, 153, 49)
+  );
+
+  text-align: center;
+  overflow: auto;
+  height: 100vh;
+}
+
+.user-text {
+  font-size: 2em;
+  margin-top: 2vh;
+}
+
+.user-cover {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(21, 153, 49),
+    rgb(224, 224, 50)
+  );
+  width: 25vh;
+  height: 7vh;
+  line-height: 7vh;
+  border-radius: 10px;
+  margin-top: 2vh;
+}
+
+.content {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  margin: 0 5vh;
+}
+
+.messages {
+  flex: 9;
+  background-color: transparent;
+  margin-top: 3vh;
+  overflow: auto;
+}
+
+.messages li {
+  list-style-type: none;
+  margin: 2vh 0;
+}
+.message-cover {
+  min-width: 30vh;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0 0.5em 1em;
+  max-width: 120vh;
+  font-family: sans-serif;
+  font-size: 0.9em;
+}
+.message-title {
+  padding: 0.5em 0.5em 0 0.5em;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.message {
+  padding: 2vh;
+  overflow-wrap: break-word;
+}
+.message-date {
+  align-self: flex-end;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  opacity: 70%;
+  font-size: 0.7em;
+}
+.form {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-message {
+  width: 800px;
+  padding: 10px;
+  background-image: linear-gradient(
+    to left,
+    rgb(224, 224, 50),
+    rgb(21, 153, 49)
+  );
+  border-color: green;
+  border-radius: 10px;
+  outline-color: green;
+}
+
+.input-message::placeholder {
+  color: black;
+}
+
+.submit-btn {
+  background-image: linear-gradient(45deg, rgb(224, 224, 50), rgb(21, 153, 49));
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+
+.location-btn {
+  background-image: linear-gradient(45deg, rgb(224, 224, 50), rgb(21, 153, 49));
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}

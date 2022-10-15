@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(80, 80, 190);
+  font-family: sans-serif;
+}
+
+.form-cover {
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  margin: 20vh auto 0 auto;
+  width: 50vh;
+  padding: 5vh;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+}
+
+form div input {
+  margin-top: 1vh;
+  padding: 1.5vh;
+  border-radius: 5px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.submit-btn {
+  margin-top: 4vh;
+  padding: 1.5vh;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: rgb(80, 80, 190);
+  cursor: pointer;
+  border: none;
+}
