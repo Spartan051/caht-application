@@ -2,7 +2,7 @@ import express from "express";
 import http from "http";
 import { Server } from "socket.io";
 import { Message, UserInfo } from "./src/dtos/dtos";
-import createMessage from "./src/utils/messages";
+import createMessage from "./src/utils/message";
 import Users from "./src/utils/users";
 
 const app = express();
@@ -24,7 +24,7 @@ io.on("connection", (socket: any): void => {
 
     socket.emit(
       "newMessage",
-      createMessage("Admin", `welcome to ${room} group`)
+      createMessage("Admin", `welcome to ${room} group ${name}`)
     );
 
     socket.broadcast
@@ -48,7 +48,7 @@ io.on("connection", (socket: any): void => {
     if (user) {
       io.to(user.room).emit(
         "newLocationMessage",
-        createMessage(user.name, location.lat!, location.lng!)
+        createMessage(user.name, "", location.lat!, location.lng!)
       );
     }
   });

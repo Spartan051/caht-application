@@ -1,6 +1,5 @@
 export interface Message {
   from: string;
-
   text?: string;
   lat?: string;
   lng?: string;

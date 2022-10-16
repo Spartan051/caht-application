@@ -1,15 +1,18 @@
-export default class Users {
-    usersList;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Users {
     constructor() {
         this.usersList = [];
     }
     addUser(id, name, room) {
+        var _a;
         const user = { id, name, room };
-        this.usersList?.push(user);
+        (_a = this.usersList) === null || _a === void 0 ? void 0 : _a.push(user);
         return user;
     }
     getUsersList(room) {
-        const users = this.usersList?.filter((user) => user.room === room);
+        var _a;
+        const users = (_a = this.usersList) === null || _a === void 0 ? void 0 : _a.filter((user) => user.room === room);
         const namesArray = users.map((user) => user.name);
         return namesArray;
     }
@@ -24,3 +27,4 @@ export default class Users {
         return user;
     }
 }
+exports.default = Users;
